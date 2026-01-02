@@ -1,0 +1,21 @@
+.box {
+  width: 360px;
+  margin-top: 20px;
+}
+
+.field {
+  width: 100%;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: lightgrey;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
