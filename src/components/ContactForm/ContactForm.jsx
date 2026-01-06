@@ -18,9 +18,9 @@ const FeedbackSchema = Yup.object().shape({
     .required("Required"),
   number: Yup.string()
     .matches(
-      /^(?:\+38)?(\(0\d{2}\)\d{3}-\d{4}|\(0\d{2}\)\d{3}-\d{2}-\d{2}|0\d{9}|\d{3}-\d{2}-\d{2})$/,
-      "Incorrect phone number format. Valid formats: XXX-XX-XX, 0XX-XXX-XX-XX, (0XX)XXX-XXXX, +380(0XX)XXX-XXXX"
-    ) // Регулярний вираз для валідації from https://poe.com/s/e3yJBmpLrsdnOqOGdjrQ
+      /^(?:\+38)?(\(0\d{2}\)\d{3}-\d{4}|\(0\d{2}\)\d{3}-\d{2}-\d{2}|0\d{9}|\d{3}-\d{2}-\d{2}|0\d{2}-\d{3}-\d{2}-\d{2})$/,
+      "Incorrect phone number format. Valid formats: XXX-XX-XX, 0XX-XXX-XX-XX, (0XX)XXX-XXXX, +38(0XX)XXX-XXXX"
+    )
     .required("Required!")
     .typeError("Enter phone-number!"),
 });
