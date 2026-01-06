@@ -16,12 +16,18 @@ function App() {
     dispatch(fetchContacts());
   }, [dispatch]);
   return (
-    <div>
+    <>
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
-      <ContactList />
-    </div>
+      <div>
+        {isLoading && !error && <p className="blinking">Loading contacts...</p>}
+        {error && <p>{error}</p>}
+      </div>
+      <div className={isLoading && !error ? "disabled" : ""}>
+        <ContactList />
+      </div>
+    </>
   );
 }
 

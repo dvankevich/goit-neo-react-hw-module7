@@ -43,3 +43,28 @@
 .read-the-docs {
   color: #888;
 }
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.blinking {
+  animation: blinking 1s steps(5, start) infinite;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+@keyframes blinking {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
