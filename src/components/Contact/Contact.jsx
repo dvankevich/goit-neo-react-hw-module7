@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/operations";
+import { deleteContact } from "../../redux/contactsOps";
 import { FaUserSecret } from "react-icons/fa6";
 import { GiRotaryPhone } from "react-icons/gi";
 import { TiDelete } from "react-icons/ti";
